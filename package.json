@@ -3,13 +3,16 @@
   "version": "1.0.0",
   "description": "chatBot com dialogflow",
   "main": "server.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "npm install && node server.js",
+    "dev": "nodemon server.js"
   },
   "author": "andrade@naldo-dev",
   "license": "ISC",
   "dependencies": {
+    "axios": "^1.6.0",
     "body-parser": "^1.20.2",
     "cors": "^2.8.5",
     "dialogflow": "^1.2.0",
